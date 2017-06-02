@@ -7,6 +7,7 @@ end
 
 gem "rails", "~> 5.0.3"
 gem "bootstrap-sass", "3.3.6"
+gem "bcrypt", "3.1.11"
 gem "mysql2", ">= 0.3.18", "< 0.5"
 gem "puma", "~> 3.0"
 gem "sass-rails", "~> 5.0"
@@ -15,6 +16,7 @@ gem "coffee-rails", "~> 4.2"
 gem "jquery-rails"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
+gem "config"
 
 group :development, :test do
   gem "byebug", platform: :mri
