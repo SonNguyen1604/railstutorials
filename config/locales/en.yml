@@ -2,6 +2,7 @@ en:
   layouts:
     application:
       app: "Ruby on Rails Tutorial Sample App"
+      welcome: "Welcome to the Sample App!"
     footer:
       the: "The"
       tutu: "Ruby on Rails Tutorial"
@@ -49,3 +50,15 @@ en:
     new:
       sign: "Sign up"
       this: "This will be a signup page for new users."
+      confirm: "Confirmation"
+      create: "Create my account"
+      name: "Name"
+      pass: "Password"
+      mail: "Email"
+    create:
+      welcome: "Welcome to the Sample App!"
+      fail: "Failed to create user."
+  shared:
+    error_messages:
+      error: "error"
+      form: "The form contain"

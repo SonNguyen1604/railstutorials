@@ -1,12 +1,19 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to t(".sample"), root_path, id: "logo" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to t(".home"), root_path %></li>
-        <li><%= link_to t(".help"), help_path %></li>
-        <li><%= link_to t(".login"), "#" %></li>
+    <%= link_to image_tag("rails.png"), root_path, class: "logo-img" %>
+    <input type="checkbox" id="menuTrigger"/>
+    <div class="menu">
+      <h3><%= link_to t(".sample"), root_path, id: "logo" %></h3>
+      <label for="menuTrigger" class="trigger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+      <ul class="links">
+        <li class="link"><%= link_to t(".home"), root_path %></li>
+        <li class="link"><%= link_to t(".help"), help_path %></li>
+        <li class="link"><%= link_to t(".login"), "#" %></li>
       </ul>
-    </nav>
+    </div>
   </div>
 </header>
