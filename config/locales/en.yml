@@ -16,6 +16,9 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+      profile: "Profile"
+      setting: "Setting"
+      logout: "Log out"
   static_pages:
     about:
       about: "About"
@@ -62,3 +65,15 @@ en:
     error_messages:
       error: "error"
       form: "The form contain"
+  sessions:
+    new:
+      login: "Log in"
+      email: "Email"
+      password: "Password"
+      signup_now: "Sign up now!"
+      new: "New user?"
+    create:
+      fail: "Invalid email/password combination"
+      success: "Log in successed!"
+    destroy:
+      logout: "You have logged out!"
