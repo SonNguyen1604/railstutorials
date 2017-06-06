@@ -238,7 +238,7 @@ input {
 #menuTrigger:checked ~ .menu .link {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
-  &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4){
+  &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5){
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
@@ -299,6 +299,10 @@ input {
   &:nth-child(4){
     -webkit-transform: translate3d(-400%, 0, 0);
     transform: translate3d(-400%, 0, 0);
+  }
+  &:nth-child(5){
+    -webkit-transform: translate3d(-500%, 0, 0);
+    transform: translate3d(-500%, 0, 0);
   }
 }
 
