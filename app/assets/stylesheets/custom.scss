@@ -205,6 +205,18 @@ input {
   width: auto;
 }
 
+/* Users index */
+
+.users-list {
+  list-style: none;
+  margin: 0;
+  li {
+    border-bottom: 1px solid $gray-lighter;
+    overflow: auto;
+    padding: 10px 0;
+  }
+}
+
 /* miscellaneous */
 
 .debug-dump {
@@ -251,7 +263,8 @@ input {
 #menuTrigger:checked ~ .menu .link {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
-  &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5){
+  &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5),
+    &:nth-child(6){
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
@@ -268,7 +281,7 @@ input {
   margin: 0;
   position: absolute;
   top: 10px;
-  transform: translate3d(-170px, 0, 0);
+  transform: translate3d(-220px, 0, 0);
   transition: transform 0.4s ease-in-out;
   z-index: 1;
 }
@@ -316,6 +329,10 @@ input {
   &:nth-child(5){
     -webkit-transform: translate3d(-500%, 0, 0);
     transform: translate3d(-500%, 0, 0);
+  }
+  &:nth-child(6){
+    -webkit-transform: translate3d(-600%, 0, 0);
+    transform: translate3d(-600%, 0, 0);
   }
 }
 
