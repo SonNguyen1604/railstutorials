@@ -72,6 +72,7 @@ en:
       password: "Password"
       signup_now: "Sign up now!"
       new: "New user?"
+      remember: "Remember me on this computer"
     create:
       fail: "Invalid email/password combination"
       success: "Log in successed!"

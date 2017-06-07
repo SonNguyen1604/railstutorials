@@ -1,9 +1,4 @@
 class UsersController < ApplicationController
-  def show
-    @user = User.find_by id: params[:id]
-    render file: "public/404.html", layout: false unless @user
-  end
-
   def new
     @user = User.new
   end
@@ -19,6 +14,11 @@ class UsersController < ApplicationController
       flash.now[:danger] = t ".fail"
       render :new
     end
+  end
+
+  def show
+    @user = User.find_by id: params[:id]
+    render file: "public/404.html", layout: false unless @user
   end
 
   private
