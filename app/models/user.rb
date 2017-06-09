@@ -36,6 +36,8 @@ class User < ApplicationRecord
   end
 
   def forget
-    update_attributes :remember_digest, nil
+    update_attributes remember_digest: nil
   end
+
+  scope :id_sort, ->{order id: :asc}
 end
