@@ -55,8 +55,7 @@ class UsersController < ApplicationController
 
   def load_user
     @user = User.find_by id: params[:id]
-
-    render file: "public/404.html", layout: false unless @user
+    valid_info @user
   end
 
   def user_params
