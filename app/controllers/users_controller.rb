@@ -5,6 +5,12 @@ class UsersController < ApplicationController
   before_action :load_user, except: [:new, :create, :index]
 
   def index
+    if params[:search]
+      @users = User.search_user params[:name]
+      render json: {
+        html_search: render_to_string(@users, layout: false)
+      }
+    end
     @users = User.select(:id, :name, :email).id_sort
       .paginate page: params[:page], per_page: Settings.user.per_page
   end
@@ -52,6 +58,20 @@ class UsersController < ApplicationController
       flash[:danger] = t ".fail_delete"
     end
     redirect_to users_url
+  end
+
+  def following
+    @title = t ".following"
+    @users = @user.following.select(:id, :email, :name).id_sort
+      .paginate page: params[:page], per_page: Settings.user.per_page
+    render :show_follow
+  end
+
+  def followers
+    @title = t ".followers"
+    @users = @user.followers.select(:id, :email, :name).id_sort
+      .paginate page: params[:page], per_page: Settings.user.per_page
+    render :show_follow
   end
 
   private
