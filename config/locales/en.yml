@@ -88,6 +88,14 @@ en:
     update:
       updated: "Profile updated!"
       fail_update: "Failed to update your information!"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    following:
+      following: "Following"
+    followers:
+      followers: "Followers"
   shared:
     error_messages:
       error: "error"
